@@ -146,6 +146,9 @@ footer{
         border: solid 1px black;
         background-image: linear-gradient(blue, yellow);
     }
+    footer{
+        background-image: radial-gradient(violet, black);
+    }
 
 /* .parallax{
     background-image: url(../imagenes\ modificadas/img-fondo.jpg);
