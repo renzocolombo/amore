@@ -123,6 +123,29 @@ footer{
      color: red;
      background-color:lightcyan;
 }
+.gradiente{
+    border: solid black 1px;
+    background-image: linear-gradient(blue, red);
+}
+.ellos{
+    grid-area: img;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.sub-ellos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        border:solid 1px black;
+        
+    }
+    .sub{
+        width: 100%;
+        border: solid 1px black;
+        background-image: linear-gradient(blue, yellow);
+    }
 
 /* .parallax{
     background-image: url(../imagenes\ modificadas/img-fondo.jpg);
