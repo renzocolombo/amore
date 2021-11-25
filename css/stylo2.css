@@ -1,0 +1,277 @@
+ 
+@font-face {
+    font-family: INSANITY;
+    src: url(../tipografias/INSANITY.ttf);
+}
+.fondo {
+    display: grid;
+    grid-template-areas: "logo nav nav nav"
+                         "img img img img"
+                         "footer footer footer footer";
+    grid-template-columns: repeat(4, 25% );
+    grid-template-rows: 185px 400px 300px;
+}
+
+
+
+header {
+    grid-area:logo;
+}
+section.contenedorProd{
+    grid-area:img;
+    overflow: hidden;
+}
+.form{
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fondo{
+    background-color: darkkhaki;
+}
+.productos{
+    /* grid-area: img; */
+   width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 350px;
+}
+
+.ellas{
+display: flex;
+justify-content: start;
+height: 400px;
+}
+.ellos{
+display: flex;
+justify-content:end;
+height: 400px;
+}
+.logo{
+    /* grid-area: logo; */
+    padding: 10px;
+}
+main.nav-nav {
+     grid-area: nav;
+     display: flex;
+     align-items: flex-end;
+     justify-content: flex-end;
+
+    
+     }
+.nav{
+   
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    width: 90%;
+    display: flex;
+    justify-content:flex-end;
+    text-align: end;
+}
+
+li{
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: INSANITY;
+}
+a{
+    font-size: 22px;
+    padding: 10px;
+}
+.imagen-fondo{
+    grid-area: img;
+    width: 100%;
+    overflow: hidden;
+   
+}
+footer{
+    grid-area: footer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+    color: blue;
+}
+footer{
+    display: grid;
+    grid-template-areas: "logofoo navfoo contacto rrss"
+                          "direccion direccion direccion direccion";
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: auto auto;                      
+}
+.contacto{
+    padding: 10px;
+}
+  
+
+.direccion {
+    grid-area: direccion;
+    font-family: INSANITY;
+     display: flex;
+     justify-content: center;
+     font-size: 20px;
+     color: red;
+     background-color:lightcyan;
+}
+
+/* .parallax{
+    background-image: url(../imagenes\ modificadas/img-fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px; */
+/* aca empieza productos */
+
+ @media only screen and (min-width:0px) and (max-width:768px){
+     .fondo{
+         display: grid;
+         grid-template-areas: "logo"
+                              "nav"
+                              "nav2"
+                              "img"
+                              "footer";
+          grid-template-columns: 100%;
+          grid-template-rows: 120px auto auto auto  ;                    
+     }
+     header {
+        grid-area:logo;
+    } 
+    section.contenedorProd{
+        grid-area:img;
+        display: flex;
+        justify-content:space-around;
+        /* width:768px; */
+    }
+     .logo{
+         /* grid-area: logo; */
+         display: flex;
+         justify-content: center;
+
+     }
+     main.nav-nav{
+         grid-area: nav;
+         padding: 0px;
+         position: relative;
+         left: 20px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+     }
+    
+     
+     
+    
+     ul li {
+         font-size: 15px;
+         display: flex;
+         justify-content:center;
+         height: 45px;
+         width: 95px;
+         position: relative;
+         right: 12px;
+
+     }
+     a{
+         display: flex;
+         justify-content: center;
+         height: 150px;
+         font-size: 12px;
+     }
+     .productos{
+         position: relative;
+        right: 30px;
+        }
+        
+     .ellas{
+         height: 310px;
+
+     }   
+     .ellos{
+         height: 310px;
+     }
+
+     img{
+        width: 100%;
+         height: 75%;
+         overflow: hidden;
+     }
+     .imagen-fondo{
+         grid-area: img;
+         width: 100%;
+         height: 180px;
+
+     }
+     footer{
+         grid-area: footer;
+     }
+     footer{
+         /* display: grid;
+         grid-template-areas: "logofoo navfoo"
+                               "contacto contacto"
+                               "redes redes"
+                                "direccion direccion";
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto auto auto auto; */
+        display:flex;
+        flex-direction:column;
+     }
+.logofoo{
+    grid-area: footer;
+    width: 140px;
+    height: 200px;
+    
+}
+.nav-footer{
+    grid-area: navfoo;
+    position: relative;
+    right: 10px;
+    
+}
+.nav-foo{
+    display: flex;
+    justify-content:center ;
+    font-size: 10px;
+    
+}
+.columna-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+}
+.contacto{
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position:relative;
+    left:10px
+   
+}
+.redes{
+    grid-area: redes;
+    position: relative;
+    right: 3px;
+}
+.direccion{
+    grid-area: direccion;
+}
+
+p{
+   font-size: 15px;
+   position:relative;
+   left: 30px;
+}
+ 
