@@ -30,6 +30,8 @@ section.contenedorProd{
 }
 .fondo{
     background-color: darkkhaki;
+    width: 100%;
+    overflow: hidden;
 }
 .productos{
     /* grid-area: img; */
@@ -80,10 +82,12 @@ li{
     text-decoration: none;
     list-style-type: none;
     font-family: INSANITY;
+    height: 35px;
 }
 a{
     font-size: 22px;
     padding: 10px;
+    
 }
 .imagen-fondo{
     grid-area: img;
@@ -91,6 +95,56 @@ a{
     overflow: hidden;
    
 }
+/* poductos ellas */
+.prodellas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+    padding: 30px;
+}
+.imgprodellas{
+    pading:10px
+}
+.direc{
+    display: flex;
+    color: red;
+    justify-content: center;
+    height: 50px;
+    padding-top: 30px;
+    font-size: 25px;
+    font-family: INSANITY;
+}
+/* ubicacion */
+
+.logoubi{
+    padding: 30px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+
+    height:400px ;
+    width: 400px;
+}
+.medioellas{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    width: 600px;
+    align-items: center;
+}
+.mediop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer{
     grid-area: footer; 
     display: flex;
@@ -100,7 +154,12 @@ footer{
 a{
     text-decoration: none;
     list-style-type: none;
-    color: blue;
+    color:black;
+    
+}
+a:hover{
+    font-size:30px;
+    color: black;
 }
 footer{
     display: grid;
@@ -111,6 +170,8 @@ footer{
 }
 .contacto{
     padding: 10px;
+   position: relative;
+   bottom: 25px;
 }
   
 
@@ -209,6 +270,18 @@ footer{
     background-attachment: fixed;
     height: 400px; */
 /* aca empieza productos */
+
+/* productos ellas */
+
+.conteiner-fluid{
+    background-image: radial-gradient(violet, black);
+    overflow: hidden;
+}
+.nav{
+    display: flex;
+    direction: row;
+justify-content: flex-end;
+}
 
  @media only screen and (min-width:0px) and (max-width:768px){
      .fondo{
