@@ -104,7 +104,7 @@ a{
     padding: 30px;
 }
 .imgprodellas{
-    pading:10px
+    padding:10px
 }
 .direc{
     display: flex;
@@ -115,6 +115,9 @@ a{
     font-size: 25px;
     font-family: INSANITY;
 }
+
+
+
 /* ubicacion */
 
 .logoubi{
@@ -173,7 +176,11 @@ footer{
    position: relative;
    bottom: 25px;
 }
-  
+
+  .navellassub{
+      display: flex;
+      justify-content: flex-end;
+  }
 
 .direccion {
     grid-area: direccion;
@@ -215,6 +222,10 @@ footer{
         animation-duration: 50s;
         animation-delay: 2s;
         
+    }
+    /* contacto */
+    form{
+        height: 500px;
     }
 
     @keyframes efecto {
@@ -273,9 +284,9 @@ footer{
 
 /* productos ellas */
 
-.conteiner-fluid{
+.conteiner{
     background-image: radial-gradient(violet, black);
-    overflow: hidden;
+    
 }
 .nav{
     display: flex;
@@ -313,14 +324,14 @@ justify-content: flex-end;
          grid-area: nav;
          padding: 0px;
          position: relative;
-         left: 20px;
+         right: 100px;
          display: flex;
          justify-content: center;
          align-items: center;
          
      }
     
-     
+
      
     
      ul li {
@@ -328,9 +339,9 @@ justify-content: flex-end;
          display: flex;
          justify-content:center;
          height: 45px;
-         width: 95px;
+         width: 268px;
          position: relative;
-         right: 12px;
+        
 
      }
      a{
@@ -338,7 +349,63 @@ justify-content: flex-end;
          justify-content: center;
          height: 150px;
          font-size: 12px;
+         width: 50%;
+        
      }
+     /* contacto */
+     .logocontacto{
+         
+         display: flex;
+         justify-content: center;
+         width: 54%;
+         position: relative;
+         left: 100px;
+     }
+     .logofoocontacto{
+         display: flex;
+         justify-content: center;
+        width: 150px;
+        position: relative;
+        left: 60px;
+     }
+     
+        
+     
+      
+         
+     
+     .navcontacto{
+         display: flex;
+         justify-content: flex-end;
+        
+     }
+     
+     .form{
+         display: flex;
+         justify-content: space-around;
+         
+     }
+     ul{
+         display: flex;
+         justify-content: space-around;
+         flex-direction: column;
+         position: relative;
+         ;
+       
+     }
+     h3{
+         font-size: 25px;
+     }
+     h4{
+         font-size: 15px;
+     }
+    
+     
+    /* ubicacion */
+    .logoubi{
+        width: 15%;
+    }
+     
      .productos{
          position: relative;
         right: 30px;
@@ -424,4 +491,30 @@ p{
    position:relative;
    left: 30px;
 }
+ /* ubicacion */
+ .mapa{
+     width: 100%;
+ }
+ /* subproductos ellas */
+  /* .imgprodellas{
+        width: 25%;
+        position: relative;
+        left: 127px;  */
+  }
+ 
+ .direc{
+     position: relative;
+     right : 30px;
+ }
+ 
+ /* .logoproellas{
+         position: relative;
+         left: 150px;
+         width: 200px; */
+ 
+ /* .navellas{
+    position: relative;
+    right:  30px;
+ }
+  */
  
